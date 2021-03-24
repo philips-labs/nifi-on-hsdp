@@ -1,5 +1,5 @@
 module "nifi" {
-  source = "../terraform-hsdp-nifi"
+  source = "github.com/philips-labs/terraform-hsdp-nifi"
 
   host_name     = "kp"
   bastion_host  = var.bastion_host
