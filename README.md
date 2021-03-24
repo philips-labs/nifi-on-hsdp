@@ -1,4 +1,4 @@
-# Kafka on HSDP
+# Apache Nifi on HSDP
 This Terraform root module demonstrates usage of a Apache Nifi provisioned 
 Container Host. 
 
@@ -31,6 +31,7 @@ Container Host.
 | cf\_region | Cloud foundry region | `string` | `"eu-west"` | no |
 | cf\_space | Cloud foundry space to provision Kafdrop in | `string` | n/a | yes |
 | cf\_username | Cloud foundry username | `string` | n/a | yes |
+| cf\_user_groups | Cloud foundry groups or CF users | `[string]` | n/a | yes |
 | nifi\_instance\_type | The EC2 instance type to use for Kafka nodes | `string` | `"t3.xlarge"` | no |
 
 ## Outputs
