@@ -36,10 +36,11 @@ variable "cf_domain" {
   description = "Default Cloud foundry domain to use for apps"
 }
 
-variable "name_postfix" {
-  type        = string
-  default     = ""
-  description = "Optional postfix to append in routes"
+
+variable "cf_user_groups" {
+  description = "User groups to assign to cluster"
+  type        = list(string)
+  default     = []
 }
 
 variable "private_key_file" {
@@ -68,7 +69,6 @@ variable "cartel_secret" {
   type        = string
   description = "Cartel secret to use for Container Host"
 }
-
 
 variable "nifi_instance_type" {
   type        = string
